@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Lista de Vulnerabilidades</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Impacto</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for vulnerability in vulnerabilities %}
+            <tr>
+                <td>{{ vulnerability.id }}</td>
+                <td>{{ vulnerability.name }}</td>
+                <td>{{ vulnerability.description }}</td>
+                <td>{{ vulnerability.impact }}</td>
+                <td>
+                    <a href="{{ url_for('get_vulnerability', vulnerability_id=vulnerability.id) }}" class="btn btn-info">Ver</a>
+                    <form action="{{ url_for('delete_vulnerability', vulnerability_id=vulnerability.id) }}" method="post" style="display:inline;">
+                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

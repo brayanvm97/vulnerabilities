@@ -1,12 +1,12 @@
 # Vulnerability Report API
 
-Esta API permite consultar un consolidado de vulnerabilidades encontradas en una aplicación web, junto con las recomendaciones para mitigarlas, y las técnicas y tácticas relevantes de la matriz MITRE ATT&CK.
+Con esta API se podra consultar a demanda el consolidado de las vulnerabilidades encontradas en la aplicación http://192.168.1.6:5000, junto con el impacto que podria generar dentro de una orgnaizacion y sus posibles remedicaciones, y las técnicas y tácticas relevantes de la matriz MITRE ATT&CK.
 
 ## Endpoints
 
-- `GET /vulnerabilities`: Devuelve una lista de todas las vulnerabilidades.
-- `GET /vulnerabilities/<int:id>`: Devuelve una vulnerabilidad específica por su ID.
-- `POST /vulnerabilities`: Añade una nueva vulnerabilidad.
+- `GET /vulnerabilities`: Muestra un listado de todas las vulnerabilidades.
+- `GET /vulnerabilities/<int:id>`: Muestra solo la vunerabilidad consultada por el ID.
+- `POST /vulnerabilities`: Agrega una nueva vulnerabilidad.
 - `DELETE /vulnerabilities/<int:id>`: Elimina una vulnerabilidad por su ID.
 
 ## Ejecución

@@ -3,35 +3,35 @@
         {
             "id": 1,
             "name": "SQL Injection",
-            "description": "Permite a un atacante interferir con las consultas que una aplicaci\u00c3\u00b3n hace a su base de datos.",
-            "impact": "Compromete la integridad de los datos y puede llevar a la divulgaci\u00c3\u00b3n de informaci\u00c3\u00b3n sensible.",
-            "remediation": "Usar consultas preparadas, Utilizar ORM (Object-Relational Mapping) Validar y sanear todas las entradas del usuario.",
+            "description": "Permite a un atacante interferir con las consultas que realiza una aplicacion hacia su base de datos.",
+            "impact": "Robo de informacion confidencial, perdida en la integridad de los datos e interrupcion del servicio",
+            "remediation": "Usar de consultas preparadas, Utilizar ORM (Object-Relational Mapping) Validar todas las entradas del usuario esperando que lo datos ingresados sean del formato esperado.",
             "mitre": "tactic: Initial Access, technique: T1190, url: https://attack.mitre.org/techniques/T1190/"
         },
         {
             "id": 2,
             "name": "Cross-Site Scripting (XSS)",
-            "description": "Permite a un atacante inyectar scripts maliciosos en p\u00c3\u00a1ginas web vistas por otros usuarios.",
-            "impact": "Robo de cookies, redirecci\u00c3\u00b3n maliciosa, defacement, keylogging.",
-            "remediation": "Escapar todas las salidas.,Sanitizar todas las entradas del usuario, Implementar CSP (Content Security Policy)",
+            "description": "Permite a un atacante inyectar codigo malicioso mediante scripts en una pagina web vistada por otros usuarios",
+            "impact": "Robo de cookies, Robo de crendenciales, Redireccionamiento malicioso, Desconfiguracion del sitio web",
+            "remediation": "Transformar los caracteres especiales en la salida del codigo, Validar y limpiar las entradas del usuario",
             "mitre": "tactic: Initial Access, technique: T1059.007, url: https://attack.mitre.org/techniques/T1059/007/"
             
         },
         {
             "id": 3,
-            "name": "Denegaci\u00c3\u00b3n de Servicio (DoS)",
-            "description": "Permite a un atacante interrumpir el funcionamiento normal de una aplicaci\u00c3\u00b3n.",
-            "impact": "Interrupci\u00c3\u00b3n de servicios, degradaci\u00c3\u00b3n del rendimiento.",
-            "remediation": "Implementar balanceo de carga, Utilizar servicios de mitigaci\u00c3\u00b3n de DDoS, Monitorizar y limitar el tr\u00c3\u00a1fico sospechoso.",
+            "name": "Denegacion de Servicio (DoS)",
+            "description": "Permite a un atacante interrumpir el funcionamiento normal de alguna aplicacion",
+            "impact": "Interrupcion del servicio, degradacion del rendimiento.",
+            "remediation": "Implementar balanceo de carga, Utilizar servicios de mitigacion de DDoS, Monitorear y limitar el trafico sospechoso.",
             "mitre": "'tactic': Impact, technique: T1499,url: https://attack.mitre.org/techniques/T1499/"
             
         },
         {
             "id": 4,
             "name": "Ataque por diccionario",
-            "description": "Permite a un atacante descifrar contrase\u00f1a mediante una lista predefinida con las palabras mas comunes, con esperanza de acceder a la cuenta de su objetivo.",
+            "description": "Permite a un atacante descifrar contrasenas mediante una lista predefinida con las palabras mas comunes, con esperanza de acceder a la cuenta de su objetivo.",
             "impact": "Acceso autorizado permitiendo el acceso a la inforacion sensible y realizar acciones en nombre del usuario",
-            "remediation": "Politicas de contrase\u00f1as mas robustas, autenticacion multifactor, limitar el numero de intentos de inicios de sesion, monitoreo y alertas.",
+            "remediation": "Politicas de contrasenas mas robustas, autenticacion multifactor, limitar el numero de intentos de inicios de sesion, monitoreo y alertas.",
             "mitre": "'tactic': 'Credential Access', 'technique': 'T1110.001', 'url': 'https://attack.mitre.org/techniques/T1110/001/'"
         }
     ]

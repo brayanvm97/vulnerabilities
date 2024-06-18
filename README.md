@@ -1,6 +1,6 @@
 # Vulnerability Report API
 
-Con esta API se podra consultar a demanda el consolidado de las vulnerabilidades encontradas en la aplicación http://192.168.1.6:5000, junto con el impacto que podria generar dentro de una orgnaizacion y sus posibles remedicaciones, y las técnicas y tácticas relevantes de la matriz MITRE ATT&CK.
+Con esta API se podra consultar a demanda el consolidado de las vulnerabilidades encontradas en la aplicación http://192.168.1.6:5000, junto con el impacto que podria generar dentro de una orgnaizacion y sus posibles remedicaciones, y en donde se ubicaria esta vulnerabilidad dentro de la matriz MITRE ATT&CK.
 
 ## Endpoints
 
